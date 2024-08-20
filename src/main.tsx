@@ -10,7 +10,7 @@ import App from './App.tsx'
 
 const router = createBrowserRouter([
   {
-    path: "/scanner-prueba/:id",
+    path: "/:id",
     element: <App/>,
   },
 ]);

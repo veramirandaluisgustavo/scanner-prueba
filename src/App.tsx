@@ -168,8 +168,8 @@ async function captureImage() {
   useEffect(() => {
     const loadModels = async () => {
       try {
-        await faceapi.loadTinyFaceDetectorModel('/scanner-prueba/models');
-        await faceapi.loadFaceLandmarkModel('/scanner-prueba/models');
+        await faceapi.loadTinyFaceDetectorModel('/models');
+        await faceapi.loadFaceLandmarkModel('/models');
         console.log("Modelos cargados");
       } catch (error) {
         console.error("Error cargando los modelos:", error);
