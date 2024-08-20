@@ -2,24 +2,23 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import './index.css'
-import {  createBrowserRouter, RouterProvider } from 'react-router-dom'
+import {  BrowserRouter, Route, Routes } from 'react-router-dom'
 //import Scanner from './components/scanner.tsx'
 import App from './App.tsx'
 
 
 
-const router = createBrowserRouter([
-  {
-    path: "/:id",
-    element: <App/>,
-  },
-]);
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   
-  
+  <BrowserRouter>
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <Routes>
+      <Route path='/:id' element={<App></App>}></Route>
+      <Route path='/' element={<div>hola mundo</div>}></Route>
+    </Routes>
   </React.StrictMode>
+  </BrowserRouter>
   
   
 )
