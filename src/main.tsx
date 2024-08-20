@@ -13,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   
   <BrowserRouter>
   <React.StrictMode>
+    <div>esto si se esta renderizando</div>
     <Routes>
       <Route path='/:id' element={<App></App>}></Route>
       <Route path='/' element={<div>hola mundo</div>}></Route>
